@@ -29,8 +29,8 @@ const Navbar = () => {
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'Services', path: '/services' },
-    { name: 'Portfolio', path: '/references' },
-    { name: 'Blog', path: '/blog' },
+    { name: 'Portfolio', path: '#' },
+    { name: 'Blog', path: '#' },
     { name: 'Contact', path: '/booking' },
   ];
 
@@ -53,25 +53,38 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
-          {navLinks.map((link) => (
-            <NavLink
-              key={link.path}
-              to={link.path}
-              className={({ isActive }) =>
-                cn(
-                  'text-white hover:text-green-400 transition-colors duration-300 link-hover text-sm font-medium tracking-wide',
-                  isActive && 'text-green-500 after:w-full'
-                )
-              }
-            >
-              {link.name}
-            </NavLink>
-          ))}
+          {navLinks.map((link) => {
+            if (link.path === '#') {
+              return (
+                <a
+                  key={link.path}
+                  href="#"
+                  className="text-white hover:text-emerald-400 transition-colors duration-300 link-hover text-sm font-medium tracking-wide"
+                >
+                  {link.name}
+                </a>
+              );
+            }
+            return (
+              <NavLink
+                key={link.path}
+                to={link.path}
+                className={({ isActive }) =>
+                  cn(
+                    'text-white hover:text-emerald-400 transition-colors duration-300 link-hover text-sm font-medium tracking-wide',
+                    isActive && 'text-emerald-500 after:w-full'
+                  )
+                }
+              >
+                {link.name}
+              </NavLink>
+            );
+          })}
         </div>
 
         {/* Mobile Navigation Toggle */}
         <button
-          className="md:hidden text-white hover:text-green-400 transition-colors"
+          className="md:hidden text-white hover:text-emerald-400 transition-colors"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -86,20 +99,33 @@ const Navbar = () => {
         )}
       >
         <div className="flex flex-col space-y-4">
-          {navLinks.map((link) => (
-            <NavLink
-              key={link.path}
-              to={link.path}
-              className={({ isActive }) =>
-                cn(
-                  'text-white hover:text-green-400 py-2 text-xl transition-colors duration-300',
-                  isActive && 'text-green-500'
-                )
-              }
-            >
-              {link.name}
-            </NavLink>
-          ))}
+          {navLinks.map((link) => {
+            if (link.path === '#') {
+              return (
+                <a
+                  key={link.path}
+                  href="#"
+                  className="text-white hover:text-emerald-400 py-2 text-xl transition-colors duration-300"
+                >
+                  {link.name}
+                </a>
+              );
+            }
+            return (
+              <NavLink
+                key={link.path}
+                to={link.path}
+                className={({ isActive }) =>
+                  cn(
+                    'text-white hover:text-emerald-400 py-2 text-xl transition-colors duration-300',
+                    isActive && 'text-emerald-500'
+                  )
+                }
+              >
+                {link.name}
+              </NavLink>
+            );
+          })}
         </div>
       </div>
     </nav>

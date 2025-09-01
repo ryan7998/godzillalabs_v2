@@ -242,12 +242,12 @@ const Services = () => {
                 Get Started
                 <MoveRight className="ml-2 h-5 w-5" />
               </Link>
-              <Link
-                to="/references"
-                className="bg-transparent border border-psyco-green-DEFAULT text-psyco-green-DEFAULT hover:bg-psyco-green-DEFAULT/10 font-medium py-3 px-8 rounded-lg transition-all duration-300 flex items-center justify-center"
+              <a
+                href="#"
+                className="bg-transparent border border-emerald-500 text-emerald-500 hover:bg-emerald-500/10 font-medium py-3 px-8 rounded-lg transition-all duration-300 flex items-center justify-center"
               >
                 View Case Studies
-              </Link>
+              </a>
             </div>
           </div>
         </div>

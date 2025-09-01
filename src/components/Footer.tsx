@@ -86,12 +86,12 @@ const Footer = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink 
-                  to="/references" 
-                  className="text-gray-300 hover:text-green-400 transition-colors"
+                <a 
+                  href="#" 
+                  className="text-gray-300 hover:text-emerald-400 transition-colors"
                 >
                   Case Studies
-                </NavLink>
+                </a>
               </li>
             </ul>
           </div>
