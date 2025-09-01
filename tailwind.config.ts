@@ -40,6 +40,12 @@ export default {
 						dark: '#059669', // Darker green
 						muted: 'rgba(16, 185, 129, 0.1)' // Transparent green for backgrounds
 					},
+					yellow: {
+						DEFAULT: '#F59E0B', // Primary yellow
+						light: '#FCD34D', // Lighter yellow
+						dark: '#D97706', // Darker yellow
+						muted: 'rgba(245, 158, 11, 0.1)' // Transparent yellow for backgrounds
+					},
 					black: {
 						DEFAULT: '#121212', // Deep black
 						light: '#1E1E1E', // Lighter black

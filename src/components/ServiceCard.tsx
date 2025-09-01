@@ -32,14 +32,19 @@ const ServiceCard = ({
       style={style}
     >
       <div className="relative h-48 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-t from-psyco-black-DEFAULT to-transparent z-10"></div>
+        {/* Green overlay for brand consistency */}
+        <div className="absolute inset-0 bg-green-500/15 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-psyco-black-DEFAULT via-psyco-black-DEFAULT/80 to-transparent z-10"></div>
         <img 
           src={imageSrc} 
           alt={title} 
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
+          style={{
+            filter: 'sepia(10%) saturate(120%) hue-rotate(60deg) brightness(0.9) contrast(1.1)'
+          }}
         />
-        <div className="absolute top-4 left-4 z-20 bg-psyco-black-card p-2 rounded-lg">
-          <div className="text-psyco-green-DEFAULT">
+        <div className="absolute top-4 left-4 z-20 bg-psyco-black-card/90 backdrop-blur-sm p-2 rounded-lg border border-green-500/20 group-hover:border-yellow-300/30 transition-colors">
+          <div className="text-psyco-green-DEFAULT group-hover:text-yellow-300 transition-colors">
             {icon}
           </div>
         </div>
@@ -50,7 +55,7 @@ const ServiceCard = ({
         <p className="text-gray-300 mb-4 text-sm">{description}</p>
         <Link 
           to={link}
-          className="inline-flex items-center text-psyco-green-light hover:text-psyco-green-DEFAULT transition-colors duration-300 text-sm font-medium"
+          className="inline-flex items-center text-psyco-green-light hover:text-yellow-300 transition-colors duration-300 text-sm font-medium"
         >
           Learn more
           <ArrowRight className="ml-1 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />

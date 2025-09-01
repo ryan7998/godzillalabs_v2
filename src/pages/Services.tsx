@@ -149,11 +149,17 @@ const Services = () => {
             >
               <div className="w-full lg:w-1/2">
                 <div className="glassmorphism p-1 rounded-2xl h-full">
-                  <div className="relative w-full h-full overflow-hidden rounded-xl">
+                  <div className="relative w-full h-full overflow-hidden rounded-xl group">
+                    {/* Green overlay for brand consistency */}
+                    <div className="absolute inset-0 bg-green-500/20 z-10"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-psyco-black-DEFAULT/60 via-transparent to-transparent z-10"></div>
                     <img 
                       src={service.image} 
                       alt={service.title} 
-                      className="object-cover w-full h-full aspect-video lg:aspect-auto transition-transform duration-10000 hover:scale-110"
+                      className="object-cover w-full h-full aspect-video lg:aspect-auto transition-all duration-700 group-hover:scale-105"
+                      style={{
+                        filter: 'sepia(15%) saturate(130%) hue-rotate(60deg) brightness(0.85) contrast(1.15)'
+                      }}
                     />
                   </div>
                 </div>

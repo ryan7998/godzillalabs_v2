@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <h2 className="text-2xl font-bold">
-                Godzilla<span className="text-green-500">Labs</span>
+                Godzilla<span className="text-yellow-300">Labs</span>
               </h2>
             </div>
             <p className="text-gray-300 max-w-md">
@@ -24,7 +24,7 @@ const Footer = () => {
                 href="https://github.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-green-400 transition-colors"
+                className="text-gray-400 hover:text-yellow-300 transition-colors"
               >
                 <Github size={20} />
               </a>
@@ -32,7 +32,7 @@ const Footer = () => {
                 href="https://linkedin.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-green-400 transition-colors"
+                className="text-gray-400 hover:text-yellow-300 transition-colors"
               >
                 <Linkedin size={20} />
               </a>
@@ -40,7 +40,7 @@ const Footer = () => {
                 href="https://godzillalabs.dev" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-green-400 transition-colors"
+                className="text-gray-400 hover:text-yellow-300 transition-colors"
               >
                 <Globe size={20} />
               </a>

@@ -50,7 +50,7 @@ const Index = () => {
             </div>
             <Link 
               to="/services"
-              className="mt-4 sm:mt-0 flex items-center text-psyco-green-DEFAULT hover:text-psyco-green-light transition-colors"
+              className="mt-4 sm:mt-0 flex items-center text-psyco-green-DEFAULT hover:text-yellow-300 transition-colors"
             >
               View all services
               <MoveRight className="ml-1 h-4 w-4" />
@@ -92,7 +92,7 @@ const Index = () => {
                 className="glassmorphism flex flex-col items-center justify-center py-8 px-4 text-center card-hover animate-fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="text-psyco-green-DEFAULT mb-4">
+                <div className="text-psyco-green-DEFAULT group-hover:text-yellow-300 transition-colors mb-4">
                   {tech.icon}
                 </div>
                 <h3 className="text-lg font-medium text-white mb-2">{tech.name}</h3>
@@ -104,7 +104,7 @@ const Index = () => {
           <div className="mt-12 text-center">
             <Link
               to="/booking"
-              className="inline-flex items-center bg-psyco-green-DEFAULT hover:bg-psyco-green-dark text-white font-medium py-3 px-8 rounded-lg transition-all duration-300 btn-glow"
+              className="inline-flex items-center bg-yellow-300 hover:bg-yellow-200 text-black font-medium py-3 px-8 rounded-lg transition-all duration-300 btn-glow"
             >
               Start Your Project
               <MoveRight className="ml-2 h-5 w-5" />
@@ -122,8 +122,8 @@ const Index = () => {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center">
             <div className="flex items-center justify-center mb-6">
-              <div className="bg-green-500/20 text-green-400 rounded-full px-4 py-2 text-sm font-medium inline-flex items-center">
-                <Sparkles className="h-4 w-4 mr-2" />
+              <div className="bg-yellow-300/20 text-yellow-300 rounded-full px-4 py-2 text-sm font-medium inline-flex items-center border border-yellow-300/30">
+                <Sparkles className="h-4 w-4 mr-2 text-yellow-300" />
                 Ready to Transform Your Business?
               </div>
             </div>
@@ -135,14 +135,14 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/booking"
-                className="bg-psyco-green-DEFAULT hover:bg-psyco-green-dark text-white font-medium py-3 px-8 rounded-lg transition-all duration-300 flex items-center justify-center btn-glow"
+                className="bg-yellow-300 hover:bg-yellow-200 text-black font-medium py-3 px-8 rounded-lg transition-all duration-300 flex items-center justify-center btn-glow"
               >
                 Get Started
                 <MoveRight className="ml-2 h-5 w-5" />
               </Link>
               <Link
                 to="/services"
-                className="bg-transparent border border-psyco-green-DEFAULT text-psyco-green-DEFAULT hover:bg-psyco-green-DEFAULT/10 font-medium py-3 px-8 rounded-lg transition-all duration-300 flex items-center justify-center"
+                className="bg-transparent border border-green-500 text-green-500 hover:bg-green-500/10 font-medium py-3 px-8 rounded-lg transition-all duration-300 flex items-center justify-center"
               >
                 Explore Services
               </Link>

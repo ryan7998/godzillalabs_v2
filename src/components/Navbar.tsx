@@ -45,7 +45,7 @@ const Navbar = () => {
         <NavLink to="/" className="flex items-center">
           <div className="text-white hover:text-green-400 transition-colors">
             <h1 className="text-2xl font-bold">
-              Godzilla<span className="text-green-500">Labs</span>
+              Godzilla<span className="text-yellow-300">Labs</span>
             </h1>
             <p className="text-xs text-gray-400 -mt-1">Software Development</p>
           </div>
