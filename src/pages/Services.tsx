@@ -14,7 +14,7 @@ const Services = () => {
       icon: <Code size={32} />,
       title: "Custom Web Development",
       description: "Building modern, scalable web applications using cutting-edge technologies. From responsive websites to complex web platforms, we deliver solutions that perform beautifully across all devices and scale with your business growth.",
-      image: "/lovable-uploads/708f9e32-840d-46a4-aaa4-75ad2689e16f.png",
+      image: "/custom_development.jpg",
       features: [
         "React, Next.js, Vue.js applications",
         "Laravel, Node.js backend development",
@@ -29,7 +29,7 @@ const Services = () => {
       icon: <Rocket size={32} />,
       title: "SaaS Product Development",
       description: "End-to-end SaaS solutions from MVP to enterprise scale. We build robust, multi-tenant applications with seamless user experiences, comprehensive admin panels, and integration-ready architectures that grow with your user base.",
-      image: "/lovable-uploads/becfc2e3-b59f-4f86-afca-b9f6fc7b7c14.png",
+      image: "/saas_development.jpg",
       features: [
         "MVP development & rapid prototyping",
         "Multi-tenant architecture",
@@ -44,7 +44,7 @@ const Services = () => {
       icon: <Bot size={32} />,
       title: "AI-Powered Applications",
       description: "Intelligent solutions that transform business processes through automation and machine learning. From chatbots to recommendation systems, we integrate cutting-edge AI technologies to give your business a competitive advantage.",
-      image: "/lovable-uploads/03e83f18-76a1-4349-a197-dbde03a93343.png",
+      image: "/ai_application.jpg",
       features: [
         "ChatGPT & OpenAI API integrations",
         "Custom chatbots & virtual assistants",

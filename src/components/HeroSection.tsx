@@ -25,6 +25,42 @@ const HeroSection = () => {
 
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+      {/* Hero Banner Background */}
+      <div className="absolute inset-0 z-0">
+        {/* CSS-based tech pattern background */}
+        <div className="w-full h-full relative">
+          {/* Grid pattern */}
+          <div 
+            className="absolute inset-0 opacity-10"
+            style={{
+              backgroundImage: `
+                linear-gradient(rgba(34, 197, 94, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(34, 197, 94, 0.1) 1px, transparent 1px)
+              `,
+              backgroundSize: '50px 50px'
+            }}
+          ></div>
+          
+          {/* Central focal point */}
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <div className="w-48 h-48 border-2 border-green-500/30 rounded-full"></div>
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 border border-green-500/50 rounded-full"></div>
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-green-500/20 rounded-full"></div>
+          </div>
+          
+          {/* Floating elements */}
+          <div className="absolute top-1/4 left-1/4 w-20 h-20 border border-green-500/20 rounded-full"></div>
+          <div className="absolute top-1/3 right-1/4 w-16 h-16 bg-green-500/10 transform rotate-45"></div>
+          <div className="absolute bottom-1/4 left-1/3 w-12 h-12 border border-green-500/30 transform rotate-45"></div>
+          <div className="absolute bottom-1/3 right-1/3 w-8 h-8 bg-green-500/15 rounded-full"></div>
+          
+          {/* Circuit lines */}
+          <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-green-500/30 to-transparent"></div>
+          <div className="absolute top-2/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-green-400/20 to-transparent"></div>
+        </div>
+        <div className="absolute inset-0 bg-black/20"></div>
+      </div>
+      
       {/* Background Elements */}
       <div 
         ref={backgroundRef}
@@ -47,17 +83,17 @@ const HeroSection = () => {
         <div className="flex flex-col items-center">
           <div className="max-w-4xl text-center">
             <div className="flex items-center justify-center mb-6">
-              <div className="bg-green-500/20 text-green-400 rounded-full px-4 py-1 text-sm font-medium inline-flex items-center">
+              <div className="bg-green-500/20 backdrop-blur-sm border border-green-500/30 text-green-400 rounded-full px-4 py-1 text-sm font-medium inline-flex items-center">
                 <Sparkles className="h-3.5 w-3.5 mr-1" />
                 Enterprise Software Solutions
               </div>
             </div>
             
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-glow mb-6">
-              Build Something <span className="text-green-500">Legendary</span>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-white mb-6 drop-shadow-2xl">
+              Build Something <span className="text-green-500 bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent">Legendary</span>
             </h1>
             
-            <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-200 mb-8 max-w-3xl mx-auto drop-shadow-lg">
               Transform your business with cutting-edge software development. From SaaS platforms to AI-powered applications, 
               we deliver enterprise-grade solutions that scale with your vision.
             </p>
@@ -65,14 +101,14 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/booking"
-                className="bg-green-500 hover:bg-green-700 text-white font-medium py-3 px-8 rounded-lg transition-all duration-300 flex items-center justify-center btn-glow"
+                className="bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-8 rounded-lg transition-all duration-300 flex items-center justify-center shadow-2xl hover:shadow-green-500/25 backdrop-blur-sm"
               >
                 Start Your Project
                 <MoveRight className="ml-2 h-5 w-5" />
               </Link>
               <Link
                 to="/services"
-                className="bg-transparent border border-green-500 text-green-500 hover:bg-green-500/10 font-medium py-3 px-8 rounded-lg transition-all duration-300 flex items-center justify-center"
+                className="bg-transparent border-2 border-green-500 text-green-500 hover:bg-green-500/10 font-medium py-3 px-8 rounded-lg transition-all duration-300 flex items-center justify-center backdrop-blur-sm hover:border-green-400"
               >
                 View Our Work
               </Link>

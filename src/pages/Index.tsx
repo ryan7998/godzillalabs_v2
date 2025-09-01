@@ -15,21 +15,21 @@ const Index = () => {
       title: "Custom Web Development",
       description: "Modern, scalable web applications built with React, Next.js, and cutting-edge technologies.",
       icon: <Code size={24} />,
-      imageSrc: "/lovable-uploads/708f9e32-840d-46a4-aaa4-75ad2689e16f.png",
+      imageSrc: "/custom_development.jpg",
       link: "/services#web-dev"
     },
     {
       title: "SaaS Development",
       description: "End-to-end SaaS solutions from MVP to scale, with robust architecture and seamless integrations.",
       icon: <Rocket size={24} />,
-      imageSrc: "/lovable-uploads/becfc2e3-b59f-4f86-afca-b9f6fc7b7c14.png",
+      imageSrc: "/saas_development.jpg",
       link: "/services#saas"
     },
     {
       title: "AI Applications",
       description: "Intelligent solutions powered by machine learning, automation, and cutting-edge AI technologies.",
       icon: <Bot size={24} />,
-      imageSrc: "/lovable-uploads/03e83f18-76a1-4349-a197-dbde03a93343.png",
+      imageSrc: "/ai_application.jpg",
       link: "/services#ai"
     }
   ];
