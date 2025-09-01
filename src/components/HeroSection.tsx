@@ -50,13 +50,13 @@ const HeroSection = () => {
           
           {/* Floating elements */}
           <div className="absolute top-1/4 left-1/4 w-20 h-20 border border-green-500/20 rounded-full"></div>
-          <div className="absolute top-1/3 right-1/4 w-16 h-16 bg-yellow-300/10 transform rotate-45"></div>
-          <div className="absolute bottom-1/4 left-1/3 w-12 h-12 border border-yellow-300/30 transform rotate-45"></div>
+          <div className="absolute top-1/3 right-1/4 w-16 h-16 bg-cyan-500/10 transform rotate-45"></div>
+          <div className="absolute bottom-1/4 left-1/3 w-12 h-12 border border-cyan-400/30 transform rotate-45"></div>
           <div className="absolute bottom-1/3 right-1/3 w-8 h-8 bg-green-500/15 rounded-full"></div>
           
           {/* Circuit lines */}
           <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-green-500/30 to-transparent"></div>
-          <div className="absolute top-2/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-yellow-300/20 to-transparent"></div>
+          <div className="absolute top-2/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-cyan-400/20 to-transparent"></div>
         </div>
         <div className="absolute inset-0 bg-black/20"></div>
       </div>
@@ -90,7 +90,7 @@ const HeroSection = () => {
             </div>
             
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-white mb-6 drop-shadow-2xl">
-              Build Something <span className="text-yellow-300">Legendary</span>
+              Build Something <span className="text-cyan-400">Legendary</span>
             </h1>
             
             <p className="text-xl text-gray-200 mb-8 max-w-3xl mx-auto drop-shadow-lg">
@@ -101,7 +101,7 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/booking"
-                className="bg-yellow-300 hover:bg-yellow-200 text-black font-medium py-3 px-8 rounded-lg transition-all duration-300 flex items-center justify-center shadow-2xl hover:shadow-yellow-300/25 backdrop-blur-sm"
+                className="bg-cyan-500 hover:bg-cyan-600 text-white font-medium py-3 px-8 rounded-lg transition-all duration-300 flex items-center justify-center shadow-2xl hover:shadow-cyan-500/25 backdrop-blur-sm"
               >
                 Start Your Project
                 <MoveRight className="ml-2 h-5 w-5" />
