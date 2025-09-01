@@ -43,7 +43,7 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <NavLink to="/" className="flex items-center">
-          <div className="text-white hover:text-green-400 transition-colors">
+          <div className="text-white hover:text-emerald-400 transition-colors">
             <h1 className="text-2xl font-bold">
               Godzilla<span className="text-cyan-400">Labs</span>
             </h1>

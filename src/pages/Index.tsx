@@ -50,7 +50,7 @@ const Index = () => {
             </div>
             <Link 
               to="/services"
-              className="mt-4 sm:mt-0 flex items-center text-psyco-green-DEFAULT hover:text-cyan-400 transition-colors"
+              className="mt-4 sm:mt-0 flex items-center text-emerald-500 hover:text-cyan-400 transition-colors"
             >
               View all services
               <MoveRight className="ml-1 h-4 w-4" />
@@ -92,7 +92,7 @@ const Index = () => {
                 className="glassmorphism flex flex-col items-center justify-center py-8 px-4 text-center card-hover animate-fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="text-psyco-green-DEFAULT group-hover:text-cyan-400 transition-colors mb-4">
+                <div className="text-emerald-500 group-hover:text-cyan-400 transition-colors mb-4">
                   {tech.icon}
                 </div>
                 <h3 className="text-lg font-medium text-white mb-2">{tech.name}</h3>
@@ -142,7 +142,7 @@ const Index = () => {
               </Link>
               <Link
                 to="/services"
-                className="bg-transparent border border-green-500 text-green-500 hover:bg-green-500/10 font-medium py-3 px-8 rounded-lg transition-all duration-300 flex items-center justify-center"
+                className="bg-transparent border border-emerald-500 text-emerald-500 hover:bg-emerald-500/10 font-medium py-3 px-8 rounded-lg transition-all duration-300 flex items-center justify-center"
               >
                 Explore Services
               </Link>
