@@ -29,8 +29,8 @@ const Navbar = () => {
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'Services', path: '/services' },
-    { name: 'Portfolio', path: '#' },
-    { name: 'Blog', path: '#' },
+    { name: 'Portfolio', path: '#portfolio' },
+    { name: 'Blog', path: '#blog' },
     { name: 'Contact', path: '/booking' },
   ];
 
@@ -61,11 +61,11 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => {
-            if (link.path === '#') {
+            if (link.path.startsWith('#')) {
               return (
                 <a
                   key={link.path}
-                  href="#"
+                  href={link.path}
                   className="text-white hover:text-emerald-400 transition-colors duration-300 link-hover text-sm font-medium tracking-wide"
                 >
                   {link.name}
@@ -107,11 +107,11 @@ const Navbar = () => {
       >
         <div className="flex flex-col space-y-4">
           {navLinks.map((link) => {
-            if (link.path === '#') {
+            if (link.path.startsWith('#')) {
               return (
                 <a
                   key={link.path}
-                  href="#"
+                  href={link.path}
                   className="text-white hover:text-emerald-400 py-2 text-xl transition-colors duration-300"
                 >
                   {link.name}
