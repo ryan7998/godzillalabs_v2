@@ -52,12 +52,18 @@ const Navbar = () => {
                 scrolled ? 'h-8' : 'h-14'
               )}
             />
-            <div className="text-white hover:text-emerald-400 transition-colors">
+            <div className="text-white group transition-colors">
               <h1 className={cn(
                 'font-bold transition-all duration-300',
                 scrolled ? 'text-lg' : 'text-2xl'
               )}>
-                Godzilla<span className="text-emerald-400">Labs</span>
+                Godzilla<span className={cn(
+                  "relative inline-block overflow-hidden",
+                  scrolled ? "h-[1.1em]" : "h-[1.2em]"
+                )}>
+                  <span className="inline-block transition-transform duration-500 ease-in-out group-hover:-translate-y-full text-emerald-400">Labs</span>
+                  <span className="inline-block transition-transform duration-500 ease-in-out group-hover:translate-y-0 translate-y-full text-cyan-400 absolute top-0 left-0 w-full">Labs</span>
+                </span>
               </h1>
               <p className={cn(
                 'text-gray-400 -mt-1 transition-all duration-300',
