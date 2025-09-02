@@ -14,34 +14,47 @@ const Booking = () => {
     {
       icon: <Calendar className="h-8 w-8" />,
       title: "Select a Date & Time",
-      description: "Choose your preferred date and time from our availability calendar."
+      description: "Choose your preferred date and time for your project consultation."
     },
     {
       icon: <MessageSquare className="h-8 w-8" />,
-      title: "Tell Us About Your Event",
-      description: "Provide details about your event type, venue, and specific requirements."
+      title: "Tell Us About Your Project",
+      description: "Provide details about your project requirements, goals, and timeline."
     },
     {
       icon: <Headphones className="h-8 w-8" />,
       title: "Consultation Call",
-      description: "Our team will contact you to discuss your needs in detail."
+      description: "Our team will contact you to discuss your project in detail."
     },
     {
       icon: <CheckCircle className="h-8 w-8" />,
-      title: "Confirmation",
-      description: "Receive your booking confirmation and prepare for an amazing event."
+      title: "Project Proposal",
+      description: "Receive a detailed proposal and timeline for your software project."
     }
   ];
 
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="bg-psyco-black-light py-16 px-6 md:px-12">
-        <div className="max-w-7xl mx-auto">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 animate-fade-in">Book Our Services</h1>
-            <p className="text-xl text-gray-300 mb-8 animate-fade-in animation-delay-100">
-              Ready to elevate your event with professional sound and lighting? Use our simple booking process to secure your date.
+      <section className="bg-gradient-to-b from-psyco-black-DEFAULT to-psyco-black-light py-24 px-6 md:px-12 relative overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute w-96 h-96 bg-gradient-to-r from-cyan-500/10 to-emerald-500/10 rounded-full blur-3xl top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2 animate-pulse"></div>
+          <div className="absolute w-80 h-80 bg-gradient-to-l from-emerald-500/10 to-cyan-500/10 rounded-full blur-3xl top-1/4 left-0 transform -translate-x-1/2 -translate-y-1/2 animate-pulse" style={{ animationDelay: '1s' }}></div>
+        </div>
+        
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="text-center max-w-4xl mx-auto">
+            <div className="inline-flex items-center bg-cyan-500/10 text-cyan-400 rounded-full px-4 py-2 text-sm font-medium border border-cyan-500/20 mb-6 animate-fade-in">
+              <Clock className="h-4 w-4 mr-2" />
+              Project Consultation
+            </div>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in leading-tight">
+              Book Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-400">Project Consultation</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-300 mb-10 animate-fade-in animation-delay-100 leading-relaxed max-w-3xl mx-auto">
+              Ready to transform your business with cutting-edge software solutions? 
+              <span className="text-cyan-300 font-medium"> Let's discuss your project</span> and bring your vision to life.
             </p>
           </div>
         </div>
@@ -81,17 +94,68 @@ const Booking = () => {
         </div>
       </section>
       
-      {/* Booking Calendar */}
+      {/* Booking System Notice */}
       <section className="py-16 px-6 md:px-12 bg-psyco-black-light">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-white mb-2">Select a Date & Time</h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
-              Choose from our available slots and tell us about your event
+        <div className="max-w-4xl mx-auto">
+          <div className="glassmorphism p-8 md:p-12 text-center border border-cyan-500/20">
+            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-cyan-500/20 to-emerald-500/20 rounded-2xl border border-cyan-500/30 mb-8">
+              <Clock className="h-10 w-10 text-cyan-400" />
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              Booking System <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-400">Coming Soon</span>
+            </h2>
+            <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+              Our online booking system is currently under development. In the meantime, we'd love to hear about your project and discuss how we can help bring your vision to life.
             </p>
+            
+            <div className="bg-gradient-to-r from-cyan-500/10 to-emerald-500/10 rounded-xl p-6 mb-8 border border-cyan-500/20">
+              <h3 className="text-2xl font-semibold text-white mb-4">Get In Touch Directly</h3>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a
+                  href="mailto:mail@fazleryan.com"
+                  className="group bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-400 hover:to-cyan-500 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 flex items-center shadow-lg hover:shadow-cyan-500/30 transform hover:scale-105"
+                >
+                  <Mail className="h-5 w-5 mr-2" />
+                  mail@fazleryan.com
+                </a>
+                <span className="text-gray-400">or</span>
+                <a
+                  href="tel:+15551234567"
+                  className="group bg-transparent border-2 border-emerald-500 text-emerald-500 hover:bg-emerald-500/10 hover:border-emerald-400 font-semibold py-3 px-8 rounded-lg transition-all duration-300 flex items-center transform hover:scale-105"
+                >
+                  <Phone className="h-5 w-5 mr-2" />
+                  +1 (555) 123-4567
+                </a>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <p className="text-gray-400 mb-4">What to expect when you contact us:</p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-emerald-400 mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="text-white font-medium">Quick Response</h4>
+                    <p className="text-gray-400 text-sm">We'll get back to you within 24 hours</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-emerald-400 mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="text-white font-medium">Free Consultation</h4>
+                    <p className="text-gray-400 text-sm">No-obligation project discussion</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-emerald-400 mt-1 flex-shrink-0" />
+                  <div>
+                    <h4 className="text-white font-medium">Custom Proposal</h4>
+                    <p className="text-gray-400 text-sm">Tailored solution for your needs</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          
-          <BookingCalendar />
         </div>
       </section>
       
@@ -108,28 +172,28 @@ const Booking = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               {
-                question: "How far in advance should I book?",
-                answer: "We recommend booking at least 4-6 weeks in advance for standard events, and 2-3 months for large events or peak season dates (May-September and December)."
+                question: "How long does a typical project take?",
+                answer: "Project timelines vary based on complexity. Simple websites take 2-4 weeks, while complex SaaS applications can take 3-6 months. We'll provide a detailed timeline during our consultation."
               },
               {
-                question: "Is a deposit required to secure a booking?",
-                answer: "Yes, a 30% deposit is required to secure your booking. The remaining balance is due one week before your event date."
+                question: "What is your development process?",
+                answer: "We follow an agile development approach with regular check-ins, milestone deliveries, and continuous feedback to ensure your project meets your expectations."
               },
               {
-                question: "What happens after I submit my booking request?",
-                answer: "Our team will review your request and contact you within 24-48 hours to discuss details and provide a customized quote."
+                question: "What happens after I contact you?",
+                answer: "We'll schedule a free consultation call within 24-48 hours to discuss your project requirements, goals, and timeline. Then we'll provide a detailed proposal."
               },
               {
-                question: "Do you provide all necessary equipment?",
-                answer: "Yes, we provide all sound and lighting equipment needed for your event, including setup, operation, and teardown."
+                question: "Do you provide ongoing support?",
+                answer: "Yes, we offer comprehensive post-launch support including maintenance, updates, bug fixes, and feature enhancements to keep your software running smoothly."
               },
               {
-                question: "Can I modify my booking after confirmation?",
-                answer: "Yes, modifications can be made up to 2 weeks before your event, subject to equipment and staff availability."
+                question: "Can I modify my project scope after starting?",
+                answer: "Absolutely! We understand that requirements can evolve. We'll work with you to accommodate changes while keeping the project on track and within budget."
               },
               {
-                question: "What is your cancellation policy?",
-                answer: "Cancellations made 30+ days before the event receive a full deposit refund. Cancellations within 14-30 days receive a 50% deposit refund. Cancellations under 14 days are non-refundable."
+                question: "What technologies do you work with?",
+                answer: "We specialize in modern technologies including React, Next.js, Node.js, Python, AI/ML, cloud platforms, and more. We choose the best tech stack for your specific needs."
               }
             ].map((faq, index) => (
               <div 
@@ -153,55 +217,55 @@ const Booking = () => {
               <div>
                 <h2 className="text-3xl font-bold text-white mb-4">Need to Speak With Us Directly?</h2>
                 <p className="text-gray-300 mb-6">
-                  If you have specific questions or prefer to discuss your requirements over the phone, our team is here to help.
+                  If you have specific questions or prefer to discuss your project requirements over the phone, our team is here to help.
                 </p>
                 
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
-                    <Phone className="h-5 w-5 text-psyco-green-DEFAULT" />
-                    <span className="text-white">+44 123 456 7890</span>
+                    <Phone className="h-5 w-5 text-cyan-400" />
+                    <span className="text-white">+1 (555) 123-4567</span>
                   </div>
                   
                   <div className="flex items-center space-x-3">
-                    <Mail className="h-5 w-5 text-psyco-green-DEFAULT" />
-                    <span className="text-white">booking@psycotikcrew.com</span>
+                    <Mail className="h-5 w-5 text-cyan-400" />
+                    <span className="text-white">mail@fazleryan.com</span>
                   </div>
                   
                   <div className="flex items-center space-x-3">
-                    <Clock className="h-5 w-5 text-psyco-green-DEFAULT" />
-                    <span className="text-white">Mon-Fri: 9am-6pm | Sat: 10am-4pm</span>
+                    <Clock className="h-5 w-5 text-cyan-400" />
+                    <span className="text-white">Mon-Fri: 9am-6pm PST | Sat: 10am-4pm PST</span>
                   </div>
                 </div>
               </div>
               
               <div className="flex flex-col justify-center space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="bg-psyco-green-DEFAULT/20 p-3 rounded-lg">
-                    <CheckCircle className="h-6 w-6 text-psyco-green-DEFAULT" />
+                  <div className="bg-cyan-500/20 p-3 rounded-lg">
+                    <CheckCircle className="h-6 w-6 text-cyan-400" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-medium text-white mb-1">Emergency Support</h3>
-                    <p className="text-gray-300">24/7 support line for existing bookings</p>
+                    <h3 className="text-lg font-medium text-white mb-1">24/7 Support</h3>
+                    <p className="text-gray-300">Round-the-clock support for active projects</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  <div className="bg-psyco-green-DEFAULT/20 p-3 rounded-lg">
-                    <CheckCircle className="h-6 w-6 text-psyco-green-DEFAULT" />
+                  <div className="bg-cyan-500/20 p-3 rounded-lg">
+                    <CheckCircle className="h-6 w-6 text-cyan-400" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-medium text-white mb-1">Custom Packages</h3>
-                    <p className="text-gray-300">Speak with our team about bespoke solutions</p>
+                    <h3 className="text-lg font-medium text-white mb-1">Custom Solutions</h3>
+                    <p className="text-gray-300">Tailored software solutions for your unique needs</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  <div className="bg-psyco-green-DEFAULT/20 p-3 rounded-lg">
-                    <CheckCircle className="h-6 w-6 text-psyco-green-DEFAULT" />
+                  <div className="bg-cyan-500/20 p-3 rounded-lg">
+                    <CheckCircle className="h-6 w-6 text-cyan-400" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-medium text-white mb-1">Site Visits</h3>
-                    <p className="text-gray-300">Request a venue assessment before your event</p>
+                    <h3 className="text-lg font-medium text-white mb-1">Free Consultation</h3>
+                    <p className="text-gray-300">No-obligation project assessment and planning</p>
                   </div>
                 </div>
               </div>
