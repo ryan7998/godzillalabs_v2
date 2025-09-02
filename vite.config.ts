@@ -8,6 +8,16 @@ export default defineConfig({
     host: "::",
     port: 8080,
   },
+  preview: {
+    host: "::",
+    port: 3030,
+    allowedHosts: [
+      "www.godzillalabs.com",
+      "godzillalabs.com",
+      "localhost",
+      "127.0.0.1"
+    ],
+  },
   plugins: [
     react(),
   ],
