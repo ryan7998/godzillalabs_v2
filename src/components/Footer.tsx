@@ -10,14 +10,17 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Logo and Description */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-2 group">
               <img 
                 src="/images/gozillalabs_notext.png" 
                 alt="GodzillaLabs" 
-                className="h-8 w-auto"
+                className="h-12 w-auto"
               />
               <h2 className="text-2xl font-bold">
-                Godzilla<span className="text-emerald-400">Labs</span>
+                Godzilla<span className="relative inline-block overflow-hidden h-[1em]">
+                  <span className="inline-block transition-transform duration-500 ease-in-out group-hover:-translate-y-full text-emerald-400">Labs</span>
+                  <span className="inline-block transition-transform duration-500 ease-in-out group-hover:translate-y-0 translate-y-full text-cyan-400 absolute top-0 left-0 w-full">Labs</span>
+                </span>
               </h2>
             </div>
             <p className="text-gray-300 max-w-md">
