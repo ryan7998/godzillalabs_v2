@@ -37,23 +37,32 @@ const Navbar = () => {
   return (
     <nav
       className={cn(
-        'fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 px-6 md:px-12',
-        scrolled ? 'glassmorphism bg-opacity-80' : 'bg-transparent'
+        'fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 md:px-12',
+        scrolled ? 'glassmorphism bg-opacity-80 py-2' : 'bg-transparent py-4'
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <NavLink to="/" className="flex items-center">
-          <div className="flex items-center space-x-3">
-            <img 
-              src="/images/gozillalabs_notext.png" 
-              alt="GodzillaLabs" 
-              className="h-10 w-auto"
+          <div className="flex items-center space-x-2">
+            <img
+              src="/images/gozillalabs_notext.png"
+              alt="GodzillaLabs"
+              className={cn(
+                'w-auto transition-all duration-300',
+                scrolled ? 'h-8' : 'h-14'
+              )}
             />
             <div className="text-white hover:text-emerald-400 transition-colors">
-              <h1 className="text-2xl font-bold">
+              <h1 className={cn(
+                'font-bold transition-all duration-300',
+                scrolled ? 'text-lg' : 'text-2xl'
+              )}>
                 Godzilla<span className="text-emerald-400">Labs</span>
               </h1>
-              <p className="text-xs text-gray-400 -mt-1">Software Development</p>
+              <p className={cn(
+                'text-gray-400 -mt-1 transition-all duration-300',
+                scrolled ? 'text-xs opacity-0 h-0' : 'text-xs opacity-100'
+              )}>Software Development</p>
             </div>
           </div>
         </NavLink>
@@ -94,7 +103,7 @@ const Navbar = () => {
           className="md:hidden text-white hover:text-emerald-400 transition-colors"
           onClick={() => setIsOpen(!isOpen)}
         >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
+          {isOpen ? <X size={scrolled ? 20 : 24} /> : <Menu size={scrolled ? 20 : 24} />}
         </button>
       </div>
 
