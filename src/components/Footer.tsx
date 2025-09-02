@@ -129,13 +129,13 @@ const Footer = () => {
 
         <div className="border-t border-green-500/10 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} Godzilla Labs. Building legendary software solutions.
+            © {new Date().getFullYear()} Godzilla Labs. <span className="text-cyan-400 font-medium">Roaring into the future</span> with enterprise-grade software that transforms businesses.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-gray-400 hover:text-green-400 text-sm transition-colors">
+            <a href="#" className="text-gray-400 hover:text-cyan-400 text-sm transition-colors">
               Privacy Policy
             </a>
-            <a href="#" className="text-gray-400 hover:text-green-400 text-sm transition-colors">
+            <a href="#" className="text-gray-400 hover:text-cyan-400 text-sm transition-colors">
               Terms of Service
             </a>
           </div>
