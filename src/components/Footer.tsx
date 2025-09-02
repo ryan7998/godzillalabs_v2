@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Mail, Github, Linkedin, Globe } from 'lucide-react';
+import { Mail, Github, Linkedin, Globe, Phone } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -10,9 +10,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Logo and Description */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-3">
+              <img 
+                src="/images/gozillalabs_notext.png" 
+                alt="GodzillaLabs" 
+                className="h-8 w-auto"
+              />
               <h2 className="text-2xl font-bold">
-                Godzilla<span className="text-yellow-300">Labs</span>
+                Godzilla<span className="text-emerald-400">Labs</span>
               </h2>
             </div>
             <p className="text-gray-300 max-w-md">
@@ -21,26 +26,26 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4 pt-2">
               <a 
-                href="https://github.com" 
+                href="https://github.com/ryan7998" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-yellow-300 transition-colors"
+                className="text-gray-400 hover:text-cyan-400 transition-colors"
               >
                 <Github size={20} />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/fazle-ryan" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-yellow-300 transition-colors"
+                className="text-gray-400 hover:text-cyan-400 transition-colors"
               >
                 <Linkedin size={20} />
               </a>
               <a 
-                href="https://godzillalabs.dev" 
+                href="https://godzillalabs.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-yellow-300 transition-colors"
+                className="text-gray-400 hover:text-cyan-400 transition-colors"
               >
                 <Globe size={20} />
               </a>
@@ -86,12 +91,12 @@ const Footer = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink 
-                  to="/references" 
-                  className="text-gray-300 hover:text-green-400 transition-colors"
+                <a 
+                  href="#" 
+                  className="text-gray-300 hover:text-emerald-400 transition-colors"
                 >
                   Case Studies
-                </NavLink>
+                </a>
               </li>
             </ul>
           </div>
@@ -104,24 +109,17 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-center space-x-3 text-gray-300">
                 <Mail size={16} className="text-green-500" />
-                <span>hello@godzillalabs.dev</span>
+                <span>mail@fazleryan.com</span>
               </li>
               <li className="flex items-center space-x-3 text-gray-300">
-                <Github size={16} className="text-green-500" />
-                <a 
-                  href="https://github.com/godzillalabs" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="hover:text-green-400 transition-colors"
-                >
-                  github.com/godzillalabs
-                </a>
+                <Phone size={16} className="text-green-500" />
+                <span>+1 (437) 234-6677</span>
               </li>
             </ul>
             <div className="mt-6">
               <NavLink
                 to="/booking"
-                className="inline-flex items-center bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-4 rounded-lg transition-all duration-300 text-sm"
+                className="inline-flex items-center bg-cyan-500 hover:bg-cyan-600 text-white font-medium py-2 px-4 rounded-lg transition-all duration-300 text-sm"
               >
                 Start Your Project
               </NavLink>
@@ -131,13 +129,13 @@ const Footer = () => {
 
         <div className="border-t border-green-500/10 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} Godzilla Labs. Building legendary software solutions.
+            © {new Date().getFullYear()} Godzilla Labs. <span className="text-emerald-400 font-medium">Roaring into the future</span> with enterprise-grade software that transforms businesses.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-gray-400 hover:text-green-400 text-sm transition-colors">
+            <a href="#" className="text-gray-400 hover:text-cyan-400 text-sm transition-colors">
               Privacy Policy
             </a>
-            <a href="#" className="text-gray-400 hover:text-green-400 text-sm transition-colors">
+            <a href="#" className="text-gray-400 hover:text-cyan-400 text-sm transition-colors">
               Terms of Service
             </a>
           </div>
