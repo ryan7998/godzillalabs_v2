@@ -14,7 +14,7 @@ const Services = () => {
       icon: <Code size={32} />,
       title: "Custom Web Development",
       description: "Building modern, scalable web applications using cutting-edge technologies. From responsive websites to complex web platforms, we deliver solutions that perform beautifully across all devices and scale with your business growth.",
-      image: "/custom_development.jpg",
+      image: "/images/custom_development.jpg",
       features: [
         "React, Next.js, Vue.js applications",
         "Laravel, Node.js backend development",
@@ -29,7 +29,7 @@ const Services = () => {
       icon: <Rocket size={32} />,
       title: "SaaS Product Development",
       description: "End-to-end SaaS solutions from MVP to enterprise scale. We build robust, multi-tenant applications with seamless user experiences, comprehensive admin panels, and integration-ready architectures that grow with your user base.",
-      image: "/saas_development.jpg",
+      image: "/images/saas_development.jpg",
       features: [
         "MVP development & rapid prototyping",
         "Multi-tenant architecture",
@@ -44,7 +44,7 @@ const Services = () => {
       icon: <Bot size={32} />,
       title: "AI-Powered Applications",
       description: "Intelligent solutions that transform business processes through automation and machine learning. From chatbots to recommendation systems, we integrate cutting-edge AI technologies to give your business a competitive advantage.",
-      image: "/ai_application.jpg",
+      image: "/images/ai_application.jpg",
       features: [
         "ChatGPT & OpenAI API integrations",
         "Custom chatbots & virtual assistants",
@@ -59,7 +59,7 @@ const Services = () => {
       icon: <Database size={32} />,
       title: "ERP Solutions & Business Automation",
       description: "Streamline your business operations with custom ERP modules tailored to your workflows. From inventory management to HR systems, we build integrated solutions that eliminate manual processes and boost efficiency.",
-      image: "/lovable-uploads/752a1366-6aea-49ad-be21-341fe7476d14.png",
+      image: "/placeholder.svg",
       features: [
         "Custom ERP module development",
         "Inventory & supply chain management",
@@ -150,8 +150,8 @@ const Services = () => {
               <div className="w-full lg:w-1/2">
                 <div className="glassmorphism p-1 rounded-2xl h-full">
                   <div className="relative w-full h-full overflow-hidden rounded-xl group">
-                    {/* Green overlay for brand consistency */}
-                    <div className="absolute inset-0 bg-green-500/20 z-10"></div>
+                    {/* Cyan overlay for brand consistency */}
+                    <div className="absolute inset-0 bg-cyan-500/20 z-10"></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-psyco-black-DEFAULT/60 via-transparent to-transparent z-10"></div>
                     <img 
                       src={service.image} 

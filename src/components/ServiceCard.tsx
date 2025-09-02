@@ -32,8 +32,8 @@ const ServiceCard = ({
       style={style}
     >
       <div className="relative h-48 overflow-hidden">
-        {/* Emerald overlay for brand consistency */}
-        <div className="absolute inset-0 bg-emerald-500/15 z-10"></div>
+        {/* Cyan overlay for brand consistency */}
+        <div className="absolute inset-0 bg-cyan-500/15 z-10"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-psyco-black-DEFAULT via-psyco-black-DEFAULT/80 to-transparent z-10"></div>
         <img 
           src={imageSrc} 

@@ -21,7 +21,7 @@ const Blog = () => {
       readTime: "6 min read",
       author: "Technical Crew",
       category: "Sound",
-      imageSrc: "/lovable-uploads/8dced82a-6a2c-48ee-a060-463c28764183.png",
+      imageSrc: "/placeholder.svg",
       featured: true
     },
     {

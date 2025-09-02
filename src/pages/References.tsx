@@ -58,7 +58,7 @@ const References = () => {
             <div className="glassmorphism p-1 h-full animate-fade-in animation-delay-200">
               <div className="relative h-full w-full overflow-hidden rounded-xl">
                 <img
-                  src="/lovable-uploads/48e75083-18aa-4df9-bc91-8515485aa465.png"
+                  src="/placeholder.svg"
                   alt="Monegros Festival 2024"
                   className="object-cover h-full w-full transition-transform duration-10000 hover:scale-110"
                 />

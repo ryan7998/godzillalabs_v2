@@ -43,11 +43,18 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <NavLink to="/" className="flex items-center">
-          <div className="text-white hover:text-emerald-400 transition-colors">
-            <h1 className="text-2xl font-bold">
-              Godzilla<span className="text-cyan-400">Labs</span>
-            </h1>
-            <p className="text-xs text-gray-400 -mt-1">Software Development</p>
+          <div className="flex items-center space-x-3">
+            <img 
+              src="/images/gozillalabs_notext.png" 
+              alt="GodzillaLabs" 
+              className="h-10 w-auto"
+            />
+            <div className="text-white hover:text-emerald-400 transition-colors">
+              <h1 className="text-2xl font-bold">
+                Godzilla<span className="text-emerald-400">Labs</span>
+              </h1>
+              <p className="text-xs text-gray-400 -mt-1">Software Development</p>
+            </div>
           </div>
         </NavLink>
 

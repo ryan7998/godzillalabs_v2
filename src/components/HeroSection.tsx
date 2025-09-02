@@ -25,40 +25,38 @@ const HeroSection = () => {
 
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
-      {/* Hero Banner Background */}
+      {/* Modern Gradient Background */}
       <div className="absolute inset-0 z-0">
-        {/* CSS-based tech pattern background */}
-        <div className="w-full h-full relative">
-          {/* Grid pattern */}
-          <div 
-            className="absolute inset-0 opacity-10"
-            style={{
-              backgroundImage: `
-                linear-gradient(rgba(34, 197, 94, 0.1) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(34, 197, 94, 0.1) 1px, transparent 1px)
-              `,
-              backgroundSize: '50px 50px'
-            }}
-          ></div>
-          
-          {/* Central focal point */}
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <div className="w-48 h-48 border-2 border-emerald-500/30 rounded-full"></div>
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 border border-emerald-500/50 rounded-full"></div>
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-emerald-500/20 rounded-full"></div>
-          </div>
-          
-          {/* Floating elements */}
-          <div className="absolute top-1/4 left-1/4 w-20 h-20 border border-emerald-500/20 rounded-full"></div>
-          <div className="absolute top-1/3 right-1/4 w-16 h-16 bg-cyan-500/10 transform rotate-45"></div>
-          <div className="absolute bottom-1/4 left-1/3 w-12 h-12 border border-cyan-400/30 transform rotate-45"></div>
-          <div className="absolute bottom-1/3 right-1/3 w-8 h-8 bg-emerald-500/15 rounded-full"></div>
-          
-          {/* Circuit lines */}
-          <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-emerald-500/30 to-transparent"></div>
-          <div className="absolute top-2/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-cyan-400/20 to-transparent"></div>
+        {/* Animated gradient background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-psyco-black-DEFAULT via-psyco-black-light to-psyco-black-DEFAULT"></div>
+        
+        {/* Floating geometric shapes */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-cyan-500/10 to-emerald-500/10 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-l from-emerald-500/10 to-cyan-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-r from-cyan-400/5 to-emerald-400/5 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '2s' }}></div>
         </div>
-        <div className="absolute inset-0 bg-black/20"></div>
+        
+        {/* Modern grid pattern */}
+        <div 
+          className="absolute inset-0 opacity-5"
+          style={{
+            backgroundImage: `
+              linear-gradient(rgba(6, 182, 212, 0.1) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(6, 182, 212, 0.1) 1px, transparent 1px)
+            `,
+            backgroundSize: '60px 60px'
+          }}
+        ></div>
+        
+        {/* Animated floating elements */}
+        <div className="absolute top-1/4 left-1/4 w-4 h-4 bg-cyan-400/30 rounded-full animate-bounce" style={{ animationDelay: '0.5s' }}></div>
+        <div className="absolute top-1/3 right-1/4 w-3 h-3 bg-emerald-400/40 rounded-full animate-bounce" style={{ animationDelay: '1.5s' }}></div>
+        <div className="absolute bottom-1/4 left-1/3 w-2 h-2 bg-cyan-300/50 rounded-full animate-bounce" style={{ animationDelay: '2.5s' }}></div>
+        <div className="absolute bottom-1/3 right-1/3 w-5 h-5 bg-emerald-300/20 rounded-full animate-bounce" style={{ animationDelay: '3s' }}></div>
+        
+        {/* Subtle overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-psyco-black-DEFAULT/50 via-transparent to-psyco-black-DEFAULT/30"></div>
       </div>
       
       {/* Background Elements */}
@@ -90,42 +88,44 @@ const HeroSection = () => {
             </div>
             
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-white mb-6 drop-shadow-2xl">
-              Build Something <span className="text-cyan-400">Legendary</span>
+              Build Something <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-400 animate-pulse">Legendary</span>
             </h1>
             
-            <p className="text-xl text-gray-200 mb-8 max-w-3xl mx-auto drop-shadow-lg">
-              Transform your business with cutting-edge software development. From SaaS platforms to AI-powered applications, 
+            <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-4xl mx-auto drop-shadow-lg leading-relaxed">
+              Transform your business with cutting-edge software development. From <span className="text-cyan-300 font-medium">SaaS platforms</span> to <span className="text-emerald-300 font-medium">AI-powered applications</span>, 
               we deliver enterprise-grade solutions that scale with your vision.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link
                 to="/booking"
-                className="bg-cyan-500 hover:bg-cyan-600 text-white font-medium py-3 px-8 rounded-lg transition-all duration-300 flex items-center justify-center shadow-2xl hover:shadow-cyan-500/25 backdrop-blur-sm"
+                className="group bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-400 hover:to-cyan-500 text-white font-semibold py-4 px-10 rounded-xl transition-all duration-300 flex items-center justify-center shadow-2xl hover:shadow-cyan-500/30 backdrop-blur-sm transform hover:scale-105 hover:-translate-y-1"
               >
-                Start Your Project
-                <MoveRight className="ml-2 h-5 w-5" />
+                <span className="relative z-10">Start Your Project</span>
+                <MoveRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+                <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-cyan-500 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </Link>
               <Link
                 to="/services"
-                className="bg-transparent border-2 border-emerald-500 text-emerald-500 hover:bg-emerald-500/10 font-medium py-3 px-8 rounded-lg transition-all duration-300 flex items-center justify-center backdrop-blur-sm"
+                className="group bg-transparent border-2 border-emerald-500 text-emerald-500 hover:bg-emerald-500/10 hover:border-emerald-400 font-semibold py-4 px-10 rounded-xl transition-all duration-300 flex items-center justify-center backdrop-blur-sm transform hover:scale-105 hover:-translate-y-1"
               >
-                View Our Work
+                <span className="relative z-10">View Our Work</span>
+                <div className="absolute inset-0 bg-emerald-500/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </Link>
             </div>
             
-            <div className="mt-12 flex items-center justify-center gap-8 text-gray-400 text-sm">
-              <div className="flex items-center">
-                <Zap className="h-4 w-4 mr-2 text-emerald-500" />
-                6+ Years Experience
+            <div className="mt-16 flex flex-wrap items-center justify-center gap-8 text-gray-300 text-sm">
+              <div className="flex items-center glassmorphism px-4 py-2 rounded-full border border-emerald-500/20 hover:border-emerald-400/40 transition-colors">
+                <Zap className="h-4 w-4 mr-2 text-emerald-400" />
+                <span className="font-medium">6+ Years Experience</span>
               </div>
-              <div className="flex items-center">
-                <Code className="h-4 w-4 mr-2 text-emerald-500" />
-                100+ Projects Delivered
+              <div className="flex items-center glassmorphism px-4 py-2 rounded-full border border-cyan-500/20 hover:border-cyan-400/40 transition-colors">
+                <Code className="h-4 w-4 mr-2 text-cyan-400" />
+                <span className="font-medium">100+ Projects Delivered</span>
               </div>
-              <div className="flex items-center">
-                <Cpu className="h-4 w-4 mr-2 text-emerald-500" />
-                AI & Cloud Experts
+              <div className="flex items-center glassmorphism px-4 py-2 rounded-full border border-emerald-500/20 hover:border-emerald-400/40 transition-colors">
+                <Cpu className="h-4 w-4 mr-2 text-emerald-400" />
+                <span className="font-medium">AI & Cloud Experts</span>
               </div>
             </div>
           </div>
