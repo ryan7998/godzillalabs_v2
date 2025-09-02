@@ -52,7 +52,7 @@ const Booking = () => {
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in leading-tight">
               Book Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-400">Project Consultation</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 mb-10 animate-fade-in animation-delay-100 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-gray-300 mb-10 animate-fade-in animation-delay-100 leading-relaxed max-w-3xl mx-auto">
               Ready to transform your business with cutting-edge software solutions? 
               <span className="text-cyan-300 font-medium"> Let's discuss your project</span> and bring your vision to life.
             </p>
@@ -104,12 +104,12 @@ const Booking = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Booking System <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-400">Coming Soon</span>
             </h2>
-            <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-300 mb-8 leading-relaxed">
               Our online booking system is currently under development. In the meantime, we'd love to hear about your project and discuss how we can help bring your vision to life.
             </p>
             
             <div className="bg-gradient-to-r from-cyan-500/10 to-emerald-500/10 rounded-xl p-6 mb-8 border border-cyan-500/20">
-              <h3 className="text-2xl font-semibold text-white mb-4">Get In Touch Directly</h3>
+              <h3 className="text-xl font-semibold text-white mb-4">Get In Touch Directly</h3>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <a
                   href="mailto:mail@fazleryan.com"
@@ -120,11 +120,11 @@ const Booking = () => {
                 </a>
                 <span className="text-gray-400">or</span>
                 <a
-                  href="tel:+15551234567"
+                  href="tel:+14372346677"
                   className="group bg-transparent border-2 border-emerald-500 text-emerald-500 hover:bg-emerald-500/10 hover:border-emerald-400 font-semibold py-3 px-8 rounded-lg transition-all duration-300 flex items-center transform hover:scale-105"
                 >
                   <Phone className="h-5 w-5 mr-2" />
-                  +1 (555) 123-4567
+                  +1 (437) 234-6677
                 </a>
               </div>
             </div>
@@ -223,7 +223,7 @@ const Booking = () => {
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <Phone className="h-5 w-5 text-cyan-400" />
-                    <span className="text-white">+1 (555) 123-4567</span>
+                    <span className="text-white">+1 (437) 234-6677</span>
                   </div>
                   
                   <div className="flex items-center space-x-3">

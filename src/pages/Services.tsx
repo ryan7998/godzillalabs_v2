@@ -124,7 +124,7 @@ const Services = () => {
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in leading-tight">
               Enterprise <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-400">Software Solutions</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 mb-10 animate-fade-in animation-delay-100 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-gray-300 mb-10 animate-fade-in animation-delay-100 leading-relaxed max-w-3xl mx-auto">
               From <span className="text-cyan-300 font-medium">SaaS platforms</span> to <span className="text-emerald-300 font-medium">AI-powered applications</span>, we deliver enterprise-grade software solutions that scale with your ambition. 
               Transform your business with technology that drives real results.
             </p>
@@ -165,7 +165,7 @@ const Services = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
               Comprehensive <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">Technology Solutions</span>
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
               Cutting-edge development services designed for modern businesses that demand excellence
             </p>
           </div>
@@ -210,7 +210,7 @@ const Services = () => {
                   <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 group-hover:text-gray-100 transition-colors">
                     {service.title}
                   </h3>
-                  <p className="text-lg text-gray-300 mb-8 leading-relaxed group-hover:text-gray-200 transition-colors">
+                  <p className="text-base text-gray-300 mb-8 leading-relaxed group-hover:text-gray-200 transition-colors">
                     {service.description}
                   </p>
                 </div>
@@ -255,7 +255,7 @@ const Services = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
               Additional <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">Expertise</span>
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
               Specialized services to complement your core development needs and accelerate your success
             </p>
           </div>
@@ -300,7 +300,7 @@ const Services = () => {
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
               Ready to Build Something <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-400">Legendary</span>?
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-12 leading-relaxed">
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto mb-12 leading-relaxed">
               From concept to deployment, we partner with you to create software solutions that drive real business results. 
               Let's transform your vision into reality with <span className="text-cyan-300 font-medium">Godzilla Labs</span>.
             </p>

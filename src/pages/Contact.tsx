@@ -66,8 +66,8 @@ const Contact = () => {
       icon: <Phone className="h-6 w-6" />,
       title: "Call Us",
       description: "Speak directly with our team",
-      contact: "+1 (555) 123-4567",
-      action: "tel:+15551234567"
+      contact: "+1 (437) 234-6677",
+      action: "tel:+14372346677"
     },
     {
       icon: <MapPin className="h-6 w-6" />,
@@ -116,7 +116,7 @@ const Contact = () => {
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in leading-tight">
               Let's Build Something <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-400">Legendary</span> Together
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 mb-10 animate-fade-in animation-delay-100 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-gray-300 mb-10 animate-fade-in animation-delay-100 leading-relaxed max-w-3xl mx-auto">
               Ready to transform your business with cutting-edge software solutions? 
               <span className="text-cyan-300 font-medium"> Let's discuss your project</span> and bring your vision to life.
             </p>
@@ -131,7 +131,7 @@ const Contact = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
               Multiple Ways to <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">Connect</span>
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
               Choose the communication method that works best for you
             </p>
           </div>
@@ -145,7 +145,7 @@ const Contact = () => {
                       {method.icon}
                     </div>
                   </div>
-                  <h3 className="text-2xl font-semibold text-white mb-3">{method.title}</h3>
+                  <h3 className="text-xl font-semibold text-white mb-3">{method.title}</h3>
                   <p className="text-gray-300 mb-4">{method.description}</p>
                   <a 
                     href={method.action}
@@ -176,7 +176,7 @@ const Contact = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
               Tell Us About Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">Project</span>
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
               Share your vision with us and let's explore how we can bring it to life with cutting-edge technology
             </p>
           </div>
@@ -321,7 +321,7 @@ const Contact = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
               Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-400">Godzilla Labs</span>?
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
               We're not just developers - we're your technology partners
             </p>
           </div>
@@ -351,7 +351,7 @@ const Contact = () => {
                       {feature.icon}
                     </div>
                   </div>
-                  <h3 className="text-2xl font-semibold text-white mb-3">{feature.title}</h3>
+                  <h3 className="text-xl font-semibold text-white mb-3">{feature.title}</h3>
                   <p className="text-gray-300 leading-relaxed">{feature.description}</p>
                 </CardContent>
               </Card>
@@ -376,7 +376,7 @@ const Contact = () => {
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
               Let's Create Something <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-400">Extraordinary</span>
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-12 leading-relaxed">
+            <p className="text-lg text-gray-300 max-w-3xl mx-auto mb-12 leading-relaxed">
               Don't wait to bring your vision to life. Contact us today and let's discuss how we can transform your business with cutting-edge software solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -388,14 +388,14 @@ const Contact = () => {
                 <Mail className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-cyan-500 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </a>
-              <a
-                href="tel:+15551234567"
-                className="group bg-transparent border-2 border-emerald-500 text-emerald-500 hover:bg-emerald-500/10 hover:border-emerald-400 font-semibold py-4 px-10 rounded-xl transition-all duration-300 flex items-center justify-center transform hover:scale-105 hover:-translate-y-1"
-              >
-                <span className="relative z-10">Call Us</span>
-                <Phone className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
-                <div className="absolute inset-0 bg-emerald-500/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </a>
+                              <a
+                  href="tel:+14372346677"
+                  className="group bg-transparent border-2 border-emerald-500 text-emerald-500 hover:bg-emerald-500/10 hover:border-emerald-400 font-semibold py-4 px-10 rounded-xl transition-all duration-300 flex items-center justify-center transform hover:scale-105 hover:-translate-y-1"
+                >
+                  <span className="relative z-10">Call Us</span>
+                  <Phone className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+                  <div className="absolute inset-0 bg-emerald-500/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </a>
             </div>
           </div>
         </div>
