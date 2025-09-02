@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Mail, Github, Linkedin, Globe } from 'lucide-react';
+import { Mail, Github, Linkedin, Globe, Phone } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -26,7 +26,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4 pt-2">
               <a 
-                href="https://github.com" 
+                href="https://github.com/ryan7998" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-cyan-400 transition-colors"
@@ -34,7 +34,7 @@ const Footer = () => {
                 <Github size={20} />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/fazle-ryan" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-cyan-400 transition-colors"
@@ -42,7 +42,7 @@ const Footer = () => {
                 <Linkedin size={20} />
               </a>
               <a 
-                href="https://godzillalabs.dev" 
+                href="https://godzillalabs.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-cyan-400 transition-colors"
@@ -109,18 +109,11 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-center space-x-3 text-gray-300">
                 <Mail size={16} className="text-green-500" />
-                <span>hello@godzillalabs.dev</span>
+                <span>hello@godzillalabs.com</span>
               </li>
               <li className="flex items-center space-x-3 text-gray-300">
-                <Github size={16} className="text-green-500" />
-                <a 
-                  href="https://github.com/godzillalabs" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="hover:text-green-400 transition-colors"
-                >
-                  github.com/godzillalabs
-                </a>
+                <Phone size={16} className="text-green-500" />
+                <span>+1 (437) 234-6677</span>
               </li>
             </ul>
             <div className="mt-6">
