@@ -59,7 +59,7 @@ const Navbar = () => {
               )}>
                 Godzilla<span className={cn(
                   "relative inline-block overflow-hidden",
-                  scrolled ? "h-[1.1em]" : "h-[1.2em]"
+                  scrolled ? "h-[1.1em]" : "h-[1em]"
                 )}>
                   <span className="inline-block transition-transform duration-500 ease-in-out group-hover:-translate-y-full text-emerald-400">Labs</span>
                   <span className="inline-block transition-transform duration-500 ease-in-out group-hover:translate-y-0 translate-y-full text-cyan-400 absolute top-0 left-0 w-full">Labs</span>
