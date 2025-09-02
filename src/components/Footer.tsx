@@ -126,7 +126,7 @@ const Footer = () => {
             <div className="mt-6">
               <NavLink
                 to="/booking"
-                className="inline-flex items-center bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-4 rounded-lg transition-all duration-300 text-sm"
+                className="inline-flex items-center bg-cyan-500 hover:bg-cyan-600 text-white font-medium py-2 px-4 rounded-lg transition-all duration-300 text-sm"
               >
                 Start Your Project
               </NavLink>
